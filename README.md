@@ -1,10 +1,41 @@
-# Getting Started with Create React App
+# React Search List
+
+## Description
+This is a React-based web application designed to display a list of cards fetched from a JSON file. The application provides a search functionality that allows users to search for specific text across all fields available in the JSON data. Upon typing in the search input box, the search results list dynamically updates to display cards matching the search query. The matching text in the search results is highlighted in blue, and if the search query is found within the items, it displays a message indicating the presence of the query value.
+
+## Features
+1. **Search Functionality**: Users can search for text across all fields available in the JSON data.
+2. **Dynamic Search Results**: Search results list updates dynamically as the user types in the search input box.
+3. **Text Highlighting**: Matching text in search results is highlighted in blue.
+4. **Feedback on Search**: If the search query is found in items, it displays a message indicating the presence of the query value.
+5. **Keyboard and Mouse Navigation**: Users can navigate through the list of cards using either keyboard or mouse.
+6. **Single Card Highlighting**: Only one card is highlighted at a time, regardless of whether keyboard or mouse navigation is used.
+7. **Preference Handling**: Keyboard navigation takes precedence if the mouse is hovered on the list, and vice versa.
+8. **Empty Card Display**: When no search results are found, an empty card is displayed.
+9. **Scrollable Card List**: The list of cards is scrollable.
+10. **Scroll Into View**: The highlighted card (via keyboard/mouse) will scroll into view.
+
+## Evaluation Criteria
+1. **Modularity of Code**: The codebase is structured into modular components, promoting code reusability and maintainability.
+2. **Handling of Keyboard Navigation with Mouse**: The application effectively handles both keyboard and mouse navigation, ensuring a seamless user experience.
+3. **Handling Scroll Into View**: The implementation appropriately handles scrolling the highlighted card into view using refs.
+
+## Requirements
+- React
+- No jQuery
+- No fancy CSS (except for card structure)
+- Do not use a library for handling ScrollIntoView
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
 
 ### `npm start`
 
@@ -14,57 +45,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
