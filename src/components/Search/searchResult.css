@@ -1,0 +1,33 @@
+.search {
+    position: "relative";
+}
+
+.search-result {
+    overflow: auto;
+    max-height: 600px;
+    border-bottom: 1px solid #3e3e3e;
+    margin: 0 1rem;
+}
+
+.input-container {
+    width: auto;
+    text-align: center;
+    position: relative;
+}
+
+.input-text {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.clear-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top:"2rem";
+    z-index: 10;
+    margin-top: 2px;
+    font-size: 24px;
+}
